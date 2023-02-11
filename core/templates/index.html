@@ -1,5 +1,6 @@
+{%load static%} 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,82 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
 <title>Michel - DS</title>
 </head>
 <body>
+    <header class="container">
+
+        <figure class="w-100 p-0 py-3 m-0 border-bottom borger-secondary">
+            <img src="../static/img/banner_header.gif" alt="" class="w-100 p-2">
+        </figure>
+       
+        <div class="container">
+            <nav class="d-flex justify-content-between py-4">
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/home.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Home</figcaption>
+                </a>
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/projetos.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Projetos</figcaption>
+                </a>
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/certificado.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Certificados</figcaption>
+                </a>
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/academico.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Acadêmico</figcaption>
+                </a>
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/curriculo.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Currículo</figcaption>
+                </a>
+                <a href="" class="m-auto text-center rounded text-secondary">
+                    <img class="w-50 p-3" src="../static/img/contato.png" alt="">
+                    <figcaption class="text-secondary" style="font-size: 1.5rem;">Contato</figcaption>
+                </a>
+            </nav>
+        </div>
+
+        <div class="w-75 m-auto d-flex justify-content-center p-1 bg-secondary rounded">
+            <div class="w-100 m-auto d-flex justify-content-center p-3 bg-light rounded">
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/github.png" alt="">
+                </a>
+
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/linkedin.png" alt="">
+                </a>
+
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/youtube.png" alt="">
+                </a>
+
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/instagram.png" alt="">
+                </a>
+
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/facebook.png" alt="">
+                </a>
+
+                <a href="" class="m-auto rounded text-center">
+                    <img class="w-25 p-0" src="../static/img/gmail.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    {%include 'projetos.html'%}
+
+    {%include 'certificados.html'%}
+
+    {%include 'academico.html'%}
+
+    {%include 'contato.html'%}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

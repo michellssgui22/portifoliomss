@@ -1,0 +1,12 @@
+nav a, figcaption{
+    transition: 0.5s;
+}
+
+nav a:hover{
+    transform: scale(1.3);
+    text-decoration: none;
+}
+
+nav a:hover figcaption{
+    opacity: 0;
+}
